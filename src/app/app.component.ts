@@ -12,7 +12,7 @@ export class AppComponent {
 
   constructor(private obj: HttpClient)
   { 
-console.log('in app compo')
+    console.log('in app compo')
     obj.get(this.baseurl).subscribe(data=>console.log(data));
     
   }
