@@ -4,16 +4,14 @@ import { HttpClient } from '@angular/common/http';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
   title = 'angidemoapp';
-  baseurl='https://springboot-demoapp.herokuapp.com/';
+  baseurl = 'https://springboot-demoapp.herokuapp.com/';
 
-  constructor(private obj: HttpClient)
-  { 
-    console.log('in app compo')
-    obj.get(this.baseurl).subscribe(data=>console.log(data));
-    
+  constructor(private obj: HttpClient) {
+    console.log('in app compo');
+    // obj.get(this.baseurl).subscribe(data=>console.log(data));
   }
 }
